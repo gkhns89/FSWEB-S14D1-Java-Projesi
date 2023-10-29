@@ -1,4 +1,4 @@
-package com.wit.inheritance.model;
+package com.wit.inheritance.model.p1;
 
 public class Rectangle {
 

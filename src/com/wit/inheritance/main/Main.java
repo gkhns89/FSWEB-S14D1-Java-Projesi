@@ -1,9 +1,9 @@
 package com.wit.inheritance.main;
 
-import com.wit.inheritance.model.Circle;
-import com.wit.inheritance.model.Cuboid;
-import com.wit.inheritance.model.Cylinder;
-import com.wit.inheritance.model.Rectangle;
+import com.wit.inheritance.model.p1.Circle;
+import com.wit.inheritance.model.p1.Cuboid;
+import com.wit.inheritance.model.p1.Cylinder;
+import com.wit.inheritance.model.p1.Rectangle;
 
 public class Main {
     public static void main(String[] args) {
