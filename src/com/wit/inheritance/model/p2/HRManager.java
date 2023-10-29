@@ -34,11 +34,11 @@ public class HRManager extends Employee {
 
             } else {
 
-                System.out.println("Related index is full!");
+                System.out.println("Related index is not empty!");
             }
         } catch (ArrayIndexOutOfBoundsException arrayEx) {
 
-            System.out.println(arrayEx.getMessage());
+            System.out.println("Given index is out of array range!\n"+arrayEx.getMessage());
 
         }
     }
@@ -52,11 +52,11 @@ public class HRManager extends Employee {
 
             } else {
 
-                System.out.println("Related index is full!");
+                System.out.println("Related index is not empty!");
             }
         } catch (ArrayIndexOutOfBoundsException arrayEx) {
 
-            System.out.println(arrayEx.getMessage());
+            System.out.println("Given index is out of array range!\n"+arrayEx.getMessage());
 
         }
     }
@@ -70,15 +70,20 @@ public class HRManager extends Employee {
 
             } else {
 
-                System.out.println("Related index is full!");
+                System.out.println("Related index is not empty!");
             }
         } catch (ArrayIndexOutOfBoundsException arrayEx) {
 
-            System.out.println(arrayEx.getMessage() + "\nGiven index is out of array range");
+            System.out.println("Given index is out of array range!\n"+arrayEx.getMessage());
 
         }
     }
 
+    @Override
+    public String toString() {
+        return "Role: HR Manager (" + getName() + ")\n" +
+                "Junior Devs=" + Arrays.toString(junDevs) + "\nMid Devs=" + Arrays.toString(midDevs) + "\nSenior Devs=" + Arrays.toString(senDevs);
+    }
 }
 
 
